@@ -71,7 +71,7 @@ struct FunctionMappingAFE2xx : public FunctionMappingBase
 	FunctionMappingAFE2xx()
 	{
 		FunctionMappingImpl::fcntMap_ = boost::assign::map_list_of
-			(ID_EemDataExchange, ID_EemDataExchangeAFE2xx);
+			(ID_EemDataExchange, ID_EemDataExchangeAFE2xx).convert_to_container< std::map<long unsigned int, short unsigned int> >();
 	}
 };
 

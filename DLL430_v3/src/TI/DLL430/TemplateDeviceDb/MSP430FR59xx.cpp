@@ -106,7 +106,7 @@ struct FunctionMappingMSP430FR59xx : public FunctionMappingBase
 			(ID_WriteAllCpuRegs,ID_WriteAllCpuRegsXv2)
 			(ID_Psa,ID_PsaXv2)
 			(ID_ExecuteFunclet,ID_ExecuteFuncletXv2)
-			(ID_WaitForStorage,ID_WaitForStorageX);
+			(ID_WaitForStorage,ID_WaitForStorageX).convert_to_container< std::map<long unsigned int, short unsigned int> >();
 		}
 };
 
@@ -131,7 +131,7 @@ struct FunctionMappingMSP430FR69xx : public FunctionMappingBase
 			(ID_ExecuteFunclet,ID_ExecuteFuncletXv2)
 			(ID_WaitForEem,ID_PollJStateReg)
 			(ID_WriteFramQuickXv2,ID_WriteMemWordsXv2) // Bug in Havok device
-			(ID_WaitForStorage,ID_WaitForStorageX);
+			(ID_WaitForStorage,ID_WaitForStorageX).convert_to_container< std::map<long unsigned int, short unsigned int> >();
 		}
 };
 

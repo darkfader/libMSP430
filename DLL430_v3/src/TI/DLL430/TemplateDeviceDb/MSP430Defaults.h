@@ -128,7 +128,7 @@ struct FunctionMappingX : public FunctionMappingBase
 			(ID_Psa,ID_PsaX)
 			(ID_ExecuteFunclet,ID_ExecuteFuncletX)
 			(ID_GetDcoFrequency,ID_GetDcoFrequencyX)
-			(ID_WaitForStorage,ID_WaitForStorageX);
+			(ID_WaitForStorage,ID_WaitForStorageX).convert_to_container< std::map<long unsigned int, short unsigned int> >();
 		}
 };
 
@@ -152,7 +152,7 @@ struct FunctionMappingXv2 : public FunctionMappingBase
 			(ID_Psa,ID_PsaXv2)
 			(ID_PollJStateReg,ID_PollJStateRegFR57xx)
 			(ID_ExecuteFunclet,ID_ExecuteFuncletXv2)
-			(ID_WaitForStorage,ID_WaitForStorageX);
+			(ID_WaitForStorage,ID_WaitForStorageX).convert_to_container< std::map<long unsigned int, short unsigned int> >();
 		}
 };
 
@@ -177,7 +177,7 @@ struct FunctionMappingXv2FRAM : public FunctionMappingBase
 			(ID_Psa,ID_PsaXv2)
 			(ID_PollJStateReg,ID_PollJStateRegFR57xx)
 			(ID_ExecuteFunclet,ID_ExecuteFuncletXv2)
-			(ID_WaitForStorage,ID_WaitForStorageX);
+			(ID_WaitForStorage,ID_WaitForStorageX).convert_to_container< std::map<long unsigned int, short unsigned int> >();
 		}
 };
 
